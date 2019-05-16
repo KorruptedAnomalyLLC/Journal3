@@ -11,6 +11,8 @@
 		0C7FA46C228CC2D600721FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FA46A228CC2D600721FD1 /* Main.storyboard */; };
 		0C7FA46E228CC2D700721FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FA46D228CC2D700721FD1 /* Assets.xcassets */; };
 		0C7FA471228CC2D700721FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FA46F228CC2D700721FD1 /* LaunchScreen.storyboard */; };
+		0C7FA47C228CCAFB00721FD1 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA47B228CCAFB00721FD1 /* Entry.swift */; };
+		0C7FA47F228CCCCB00721FD1 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FA47E228CCCCB00721FD1 /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0C7FA46D228CC2D700721FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C7FA470228CC2D700721FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C7FA472228CC2D700721FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C7FA47B228CCAFB00721FD1 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		0C7FA47E228CCCCB00721FD1 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				0C7FA478228CC2F000721FD1 /* Resources */,
 				0C7FA479228CC30100721FD1 /* Storyboards */,
+				0C7FA47D228CCB0000721FD1 /* Model */,
+				0C7FA47E228CCCCB00721FD1 /* EntryController.swift */,
 			);
 			path = JournalAttempt3;
 			sourceTree = "<group>";
@@ -75,6 +81,14 @@
 				0C7FA46F228CC2D700721FD1 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0C7FA47D228CCB0000721FD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C7FA47B228CCAFB00721FD1 /* Entry.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7FA47F228CCCCB00721FD1 /* EntryController.swift in Sources */,
+				0C7FA47C228CCAFB00721FD1 /* Entry.swift in Sources */,
 				0C7FA467228CC2D600721FD1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JournalAttempt3/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalAttempt3/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JournalAttempt3/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalAttempt3/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
